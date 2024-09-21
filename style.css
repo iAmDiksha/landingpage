@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body,html{
+    width: 100%;
+}
+
+body{
+    overflow: hidden;
+}
+
+body a{
+    text-decoration: none;
+}
+
+.container{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    .menu{
+        margin: 15px 0px;
+        .logo{
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+}
+
+.wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% auto;
+    .lwrap{
+        width: 90%;
+        h1{
+            font-size: 50px;
+            font-weight: 300;
+            text-transform: capitalize;
+            line-height: 110%;
+            margin-top: 40px;
+            span{
+                font-weight: bold;
+            }
+        }
+        p{
+            padding: 20px 80px 10px 0px;
+        }
+        .button{
+            display: grid;
+            grid-template-columns: 30% auto;
+            grid-gap: 20px;
+            margin-top: 30px;
+            .vdbtn{
+                display: flex;
+                place-items: center;
+                cursor: pointer;
+                p{
+                    font-size: 20px;
+                    padding: 0 5px;
+                }
+                img{
+                    width: 30px;
+                }
+            }
+            a{
+                background-color: #000;
+                color: white;
+                width: 100%;
+                height: 50px;
+                font-size: 16px;
+                position: relative;
+                display: grid;
+                font-weight: 500;
+                border-radius: 20px;
+                place-items: center;
+            }
+        }
+    }
+}
+
+.rwrap{
+    display: flex;
+    .img1{
+        transform: rotate(20deg) translate(-200px, -65px);
+        transform-origin: center center; 
+        img{
+            width: 235px;
+            height: 300px;
+            object-fit: cover;
+            margin: 3px 15px;
+        }
+    }
+}
